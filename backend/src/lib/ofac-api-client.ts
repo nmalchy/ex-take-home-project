@@ -1,4 +1,5 @@
 import axios, { AxiosInstance, AxiosResponse } from 'axios';
+import { OFACRequestData } from '../types';
 
 class OFACClient {
     private client: AxiosInstance;
@@ -17,7 +18,7 @@ class OFACClient {
 
     async checkSanctionedUsers(endpoint: string, fullName: string, birthYear: string, country: string): Promise<unknown> {
         try {
-            const params = {
+            const params: OFACRequestData = {
                 apiKey: this.apiKey,
                 minScore: 95,
                 sources: ['SDN', 'NONSDN', 'UK'],
