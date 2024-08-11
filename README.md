@@ -50,8 +50,14 @@ Now go to the localhost URL and have fun!
 To run tests use the command `npm run test` in both the /backend and /frontend directories; in the frontend it may not detect the test files so you need to press "a" in the terminal
 
 ### Usage
+I was unfortunately unable to acquire a functional API key for this project so I had to mock response data instead so in order to use the app and test the functionality you will need to base your inputs on this hard-coded mock data:
 
-1. Enter text inputs in form fields
+    { fullName: 'Justin Trudeau', birthYear: '1971', country: 'Canada' },
+    { fullName: 'Pierre Poilievre', birthYear: '1979', country: 'Canada' },
+    { fullName: 'Donald Trump', birthYear: '1946', country: 'USA' },
+    { fullName: 'Kamala Harris', birthYear: '1964', country: 'USA' },
+
+1. Enter text inputs in form fields based on the data above and try random other politicians not specified.
 
 2. Press "Submit" button and see what happens
 
