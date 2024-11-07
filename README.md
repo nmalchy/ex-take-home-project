@@ -1,4 +1,4 @@
-# Bree Take-Home Project
+# Take-Home Project
 
 This application checks to see if the person of interest exists in a database of sanctioned persons based on specific criteria and returns "Hit" in the UI alongside the values that were hits or misses if the full name is detected and "Clear" without the hits or misses if the full name is not detected.
 
